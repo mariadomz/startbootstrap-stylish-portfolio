@@ -591,7 +591,7 @@ progress {
   margin-top: -1rem;
   margin-bottom: 1rem;
   font-size: 0.875em;
-  color: #6c757d;
+  color: #9fb3f5;
 }
 .blockquote-footer::before {
   content: "— ";
@@ -912,6 +912,7 @@ progress {
     flex: 0 0 auto;
     width: 33.3333333333%;
   }
+  
   .row-cols-sm-4 > * {
     flex: 0 0 auto;
     width: 25%;
@@ -7554,6 +7555,9 @@ textarea.form-control-lg {
   margin-right: auto !important;
   margin-left: auto !important;
 }
+h2.mx-auto.mb-5 {
+  color: white;  /* Texto en color blanco */
+}
 
 .my-0 {
   margin-top: 0 !important;
@@ -7653,6 +7657,14 @@ textarea.form-control-lg {
 .mb-1 {
   margin-bottom: 0.25rem !important;
 }
+h1.mb-1 {
+  color: #852AFA;  /* Texto blanco */
+
+  padding: 5px;
+  
+  text-shadow: 2px 2px 5px cyan;
+
+}
 
 .mb-2 {
   margin-bottom: 0.5rem !important;
@@ -7665,9 +7677,20 @@ textarea.form-control-lg {
 .mb-4 {
   margin-bottom: 1.5rem !important;
 }
-
+h2.mb-4 {
+  color:white;
+}
 .mb-5 {
   margin-bottom: 3rem !important;
+}
+h3.mb-5 {
+  color:white;;
+  padding: 5px;
+  text-shadow: 2px 2px 5px cyan;
+}
+h2.mb-5 {
+  color:white;;
+
 }
 
 .mb-auto {
@@ -8155,6 +8178,8 @@ textarea.form-control-lg {
 }
 
 .bg-light {
+  --bs-light-rgb: 0, 183, 183;  /* Cambia el valor de los componentes RGB (cian en este caso) */
+  
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
 }
@@ -10959,7 +10984,7 @@ html {
 
 .callout {
   padding: 15rem 0;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-callout.jpg");
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/photo3.avif");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11014,7 +11039,7 @@ footer.footer .social-link:hover {
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-masthead.jpg");
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/hq720.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11031,6 +11056,14 @@ footer.footer .social-link:hover {
   .masthead h1, .masthead .h1 {
     font-size: 5.5rem;
   }
+}
+.content-section#portfolio {
+  background-image: url('../assets/img/images.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px 0;
+  position: relative;
 }
 
 .portfolio-item {
